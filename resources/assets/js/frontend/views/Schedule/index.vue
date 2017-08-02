@@ -71,7 +71,7 @@
                 }
             },
             getTitle(schedule, index) {
-              return schedule.name.length > 47 ? schedule.name.slice(0, 47) + '...' : schedule.name
+              return schedule.name.length > 50 ? schedule.name.slice(0, 47) + '...' : schedule.name
             },
             goTo(schedule) {
                 this.$router.push({

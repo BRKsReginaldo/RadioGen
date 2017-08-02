@@ -84,8 +84,8 @@ return [
     // If true, the uploading file's size will be verified for over than max_image_size/max_file_size.
     'should_validate_size' => false,
 
-    'max_image_size' => 50000,
-    'max_file_size' => 100000,
+    'max_image_size' => 70000,
+    'max_file_size' => 300000,
 
     // If true, the uploading file's mime type will be valid in valid_image_mimetypes/valid_file_mimetypes.
     'should_validate_mime' => false,
@@ -165,7 +165,8 @@ return [
     // These values override your php.ini settings before uploading files
     // Set these to false to ingnore and apply your php.ini settings
     'php_ini_overrides' => [
-        'memory_limit'        => '256M'
+        'memory_limit'        => '256M',
+        'post_max_size'     =>  '200M'
     ]
 
 ];

@@ -45,6 +45,9 @@
             },
             getDiff(post) {
                 return moment(post.updated_at).fromNow()
+            },
+            getTitle(post) {
+                return post.title.length > 50 ? post.title.slice(0, 47) + '...' : post.title
             }
         }
     }
@@ -69,7 +72,7 @@
                                 </v-flex>
                                 <v-flex xs7>
                                     <v-card-media contain>
-                                        <router-link :to="goTo(post)" class="headline">{{ post.title }}</router-link>
+                                        <router-link :to="goTo(post)" class="headline">{{ getTitle(post) }}</router-link>
                                         <div>{{ getDescription(post) }}
                                             <router-link :to="goTo(post)">ler mais</router-link>
                                         </div>

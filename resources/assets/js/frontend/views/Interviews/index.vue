@@ -45,6 +45,9 @@
             },
             getDiff(interview) {
                 return moment(interview.updated_at).fromNow()
+            },
+            getTitle(interview) {
+                return interview.title.length > 50 ? interview.title.slice(0, 47) + '...' : interview.title
             }
         }
     }
@@ -69,7 +72,7 @@
                                 </v-flex>
                                 <v-flex xs7>
                                     <v-card-media contain>
-                                        <router-link :to="goTo(interview)" class="headline">{{ interview.title }}</router-link>
+                                        <router-link :to="goTo(interview)" class="headline">{{ getTitle(interview) }}</router-link>
                                         <div>{{ getDescription(interview) }} <router-link :to="goTo(interview)">ler mais</router-link></div>
                                     </v-card-media>
                                 </v-flex>

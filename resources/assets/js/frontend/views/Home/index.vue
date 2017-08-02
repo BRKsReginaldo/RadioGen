@@ -16,7 +16,7 @@ export default {
         <v-layout row-md column>
             <v-flex md6 sm12 xs12>
                 <r-gallery fetch="/api/posts/latest" route="Posts.Child" sk="PostLatest">
-                    Últimas materias
+                    Últimas matérias
                 </r-gallery>
             </v-flex>
             <v-flex md6 sm12 xs12>
