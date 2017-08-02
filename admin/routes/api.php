@@ -64,7 +64,7 @@ Route::group(['prefix' => 'radio', 'as' => 'radio.', 'namespace' => 'Radio'], fu
     });
 });
 
-Route::group(['prefix' => 'settings', 'namespace' => 'settings', 'as' => 'Settings.'], function() {
+Route::group(['prefix' => 'settings', 'namespace' => 'Settings', 'as' => 'Settings.'], function() {
    Route::group(['prefix' => 'general', 'as' => 'general.'], function() {
       Route::post('add', 'SettingsController@store')->name('add');
       Route::put('update/{configuration}', 'SettingsController@update')->name('update');
