@@ -69,4 +69,8 @@ $namedRoute('/chat', 'Chat');
 
 $namedRoute('/partners', 'Partners');
 
+Route::get('/phpinfo', function() {
+	phpinfo();
+});
+
 Route::get('/{all}', $homeView())->where(['all' => '.*']);

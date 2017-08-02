@@ -66,7 +66,7 @@
                                     <span class="fa fa-trash"></span>
 
                                     {!! Form::open([
-                                    'route' => ['admin.blog.photos.delete', $video['id']],
+                                    'route' => ['admin.blog.videos.delete', $video['id']],
                                     'id' => 'delete-'. $video['id'],
                                     'method' => 'delete']) !!}
 

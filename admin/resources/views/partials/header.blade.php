@@ -3,7 +3,7 @@
     <!-- Logo -->
     <a href="{{ route('admin.dashboard') }}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>X</b>F</span>
+        <span class="logo-mini"><b>RB</b>J</span>
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg"><b>{{ config('app.name') }}</b>Admin</span>
     </a>
