@@ -21,7 +21,7 @@ export default {
 <template>
     <v-container>
         <v-list subheader light>
-            <v-subheader>Encontre a radio nas redes sociais</v-subheader>
+            <v-subheader>Encontre a rádio nas redes sociais</v-subheader>
             <v-list-tile v-for="(item, i) in items()" :key="i" :href="item.link" target="_blank">
                 <v-list-tile-action>
                     <v-icon :class="item.color" v-bind="{ fa: !!!item.md }" light>{{ item.icon }}</v-icon>
