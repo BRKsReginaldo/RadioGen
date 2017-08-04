@@ -12,6 +12,12 @@ class ModelObserver {
     {
         $this->updated($model);
     }
+
+    public function deleted(Model $model)
+    {
+        $this->updated($model);
+    }
+
     public function updated(Model $model)
     {
         $cacheKey = $model->getTable();
@@ -26,5 +32,7 @@ class ModelObserver {
         if (Cache::has(strtolower($cacheKey).'-latest')) {
             Cache::forget(strtolower($cacheKey).'-latest');
         }
+
+        Log::info($cacheKey);
     }
 }
