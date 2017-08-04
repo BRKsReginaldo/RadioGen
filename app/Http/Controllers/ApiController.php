@@ -198,20 +198,9 @@ class ApiController extends Controller
 
     public function cachedResults($key, $query, $get = true, $paginate = false, $perPage = 10)
     {
-        if (Cache::has($key)) {
-            return Cache::get($key);
+        if ($paginate) {
+            return $query->paginate($perPage);
         }
-
-        if ($get) {
-            Cache::put($key, $query->get(), Carbon::now()->addMonth());
-
-            return Cache::get($key);
-        } else if ($paginate) {
-            Cache::put($key, $query->paginate($perPage), Carbon::now()->addMonth());
-
-            return Cache::get($key);
-        }
-
         return $query->get();
     }
 }

@@ -7,6 +7,7 @@ use Admin\Models\Event;
 use Admin\Models\Page;
 use Admin\Models\Partner;
 use Admin\Models\Photo;
+use Admin\Models\Poll;
 use Admin\Models\Post;
 use Admin\Models\Team;
 use Admin\Models\Top;
