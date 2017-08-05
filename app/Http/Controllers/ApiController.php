@@ -114,7 +114,7 @@ class ApiController extends Controller
     public function teams()
     {
         $key = 'teams';
-        $teams = $this->cachedResults($key, Team::orderBy('created_at', 'desc'), 16);
+        $teams = $this->cachedResults($key, Team::orderBy('created_at', 'desc'), false, true, 16);
 
         return response($teams, 200);
     }
