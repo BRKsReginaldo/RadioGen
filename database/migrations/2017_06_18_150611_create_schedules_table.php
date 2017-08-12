@@ -25,8 +25,8 @@ class CreateSchedulesTable extends Migration
         Schema::create('day_schedule', function(Blueprint $table) {
             $table->integer('schedule_id')->unsigned();
             $table->integer('day_id')->unsigned();
-            $table->timestamp('starts_at');
-            $table->timestamp('ends_at');
+            $table->string('starts_at');
+            $table->string('ends_at');
             $table->timestamps();
         });
     }
