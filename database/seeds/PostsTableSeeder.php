@@ -19,10 +19,10 @@ class PostsTableSeeder extends Seeder
         \DB::table('posts')->insert(array (
             0 => 
             array (
-                'id' => '1',
-                'user_id' => '2',
-                'type_id' => '2',
-                'active' => '1',
+                'id' => 1,
+                'user_id' => 2,
+                'type_id' => 2,
+                'active' => 1,
                 'title' => 'Novena para Bom Jesus da Cana Verde',
             'body' => '<h4 class="m_2709871712504798307gmail-tituloNoticiaDet">Novena para Bom Jesus da Cana Verde come&ccedil;a quinta-feira (27)</h4>
 <p>&nbsp;</p>
@@ -43,15 +43,15 @@ class PostsTableSeeder extends Seeder
                 'meta_title' => 'Novena para Bom Jesus da Cana Verde',
                 'meta_keywords' => NULL,
                 'created_at' => '2017-07-30 20:15:54',
-                'updated_at' => '2017-07-30 20:15:54',
-                'deleted_at' => NULL,
+                'updated_at' => '2017-08-03 19:51:26',
+                'deleted_at' => '2017-08-03 19:51:26',
             ),
             1 => 
             array (
-                'id' => '2',
-                'user_id' => '2',
-                'type_id' => '1',
-                'active' => '1',
+                'id' => 2,
+                'user_id' => 2,
+                'type_id' => 1,
+                'active' => 1,
                 'title' => '86º Festa do Senhor Bom Jesus da Cana Verde -   Procissão Luminosa  2017',
             'body' => '<p>Na noite de quinta-feira (27) foi realizada na cidade de Siqueira Campos a Prociss&atilde;o Luminosa que deu in&iacute;cio oficialmente a abertura da 86&ordf; festa do Senhor Bom Jesus da Cana Verde, milhares de pessoas estiveram presentes mostrando sua devo&ccedil;&atilde;o ao Senhor Bom Jesus. A prociss&atilde;o iluminada cruzou a cidade, num momento de f&eacute; e emo&ccedil;&atilde;o, chegando ao Santu&aacute;rio em uma linda demonstra&ccedil;&atilde;o de devo&ccedil;&atilde;o, fogos de artif&iacute;cios forma lan&ccedil;ados ao c&eacute;u em uma homenagem lind&iacute;ssima, seguida de uma missa ministrada pelo Frei Marcus.</p>
 <p>Deus seja Louvado...<br />Bom Jesus da Cana Verde:."O CORA&Ccedil;&Atilde;O DO NORTE PIONEIRO".</p>',
@@ -66,10 +66,10 @@ class PostsTableSeeder extends Seeder
             ),
             2 => 
             array (
-                'id' => '3',
-                'user_id' => '2',
-                'type_id' => '1',
-                'active' => '1',
+                'id' => 3,
+                'user_id' => 2,
+                'type_id' => 1,
+                'active' => 1,
                 'title' => 'Fala Cidade: Entrevista com investigador Fernando',
             'body' => '<p>Recebemos no programa Fala Cidade desta quinta-feira (27) o investigador Fernando Teixeira, falando sobre a seguran&ccedil;a da 86&ordm; Festa do Senhor Bom Jesus da Cana Verde, quais os procedimentos a serem tomados para cuidar das casas e carros, tudo isso para garantir uma festa agrad&aacute;vel a todos.</p>',
                 'image' => '/photos//20431177_713626105513717_3456908768747610446_n.jpg',
@@ -78,8 +78,116 @@ class PostsTableSeeder extends Seeder
                 'meta_title' => 'Fala Cidade: Entrevista com investigador Fernando',
                 'meta_keywords' => NULL,
                 'created_at' => '2017-07-31 11:36:52',
-                'updated_at' => '2017-07-31 11:36:52',
+                'updated_at' => '2017-08-10 21:39:19',
+                'deleted_at' => '2017-08-10 21:39:19',
+            ),
+            3 => 
+            array (
+                'id' => 4,
+                'user_id' => 2,
+                'type_id' => 1,
+                'active' => 1,
+                'title' => 'Professor de Siqueira Campos está entre os 50 finalistas no Prêmio Educador Nota 10',
+                'body' => 'Insira um conteudo para sua postagem',
+                'image' => '/photos//marcelinocencio_pereira_costa.jpg',
+                'thumb' => '/photos//thumbs/marcelinocencio_pereira_costa.jpg',
+                'meta_description' => NULL,
+                'meta_title' => 'Professor de Siqueira Campos está entre os 50 finalistas no Prêmio Educador Nota 10',
+                'meta_keywords' => NULL,
+                'created_at' => '2017-08-02 10:47:43',
+                'updated_at' => '2017-08-03 21:10:43',
+                'deleted_at' => '2017-08-03 21:10:43',
+            ),
+            4 => 
+            array (
+                'id' => 5,
+                'user_id' => 2,
+                'type_id' => 1,
+                'active' => 1,
+                'title' => 'Giro Esportivo: Um programa inovador,moderno e interativo!',
+                'body' => '<p>Um programa inovador,moderno e interativo!</p>
+<div class="text_exposed_show">
+<p>Aqui voc&ecirc; acompanha as not&iacute;cias do esporte da nossa regi&atilde;o, sem deixar de lado as not&iacute;cias dos principais clubes do pa&iacute;s.Entrevistas exclusivas, onde o ouvinte tem a oportunidade de interagir com nossa equipe!</p>
+<p>Segunda a sexta-feira das 11h &agrave; 12h.</p>
+</div>',
+                'image' => '/photos//esporte.jpg',
+                'thumb' => '/photos//thumbs/esporte.jpg',
+                'meta_description' => NULL,
+                'meta_title' => 'Giro Esportivo: Um programa inovador,moderno e interativo!',
+                'meta_keywords' => NULL,
+                'created_at' => '2017-08-03 20:17:55',
+                'updated_at' => '2017-08-10 21:39:13',
+                'deleted_at' => '2017-08-10 21:39:13',
+            ),
+            5 => 
+            array (
+                'id' => 6,
+                'user_id' => 2,
+                'type_id' => 2,
+                'active' => 1,
+                'title' => 'Lollapalooza Brasil terá três dias em março de 2018',
+                'body' => '<p>Lollapalooza Brasil ter&aacute; tr&ecirc;s dias em mar&ccedil;o de 2018</p>',
+                'image' => '/photos//664415375-lollapalooza-brasil-tera-tres-dias-em-marco-de-2018.jpg',
+                'thumb' => '/photos//thumbs/664415375-lollapalooza-brasil-tera-tres-dias-em-marco-de-2018.jpg',
+                'meta_description' => NULL,
+                'meta_title' => 'Lollapalooza Brasil terá três dias em março de 2018',
+                'meta_keywords' => NULL,
+                'created_at' => '2017-08-03 20:43:28',
+                'updated_at' => '2017-08-10 21:38:57',
+                'deleted_at' => '2017-08-10 21:38:57',
+            ),
+            6 => 
+            array (
+                'id' => 7,
+                'user_id' => 2,
+                'type_id' => 3,
+                'active' => 1,
+                'title' => 'Entrevista Dr. Felipe Batistela',
+            'body' => '<p><span id="fbPhotoSnowliftCaption" class="fbPhotosPhotoCaption" tabindex="0" aria-live="polite" data-ft="{&quot;tn&quot;:&quot;K&quot;}"><span class="hasCaption">Ficar triste ap&oacute;s o epis&oacute;dio violento &eacute; normal. Quando procurar ajuda?&nbsp;<br /><br />Essa e outras perguntas ser&atilde;o respondidas na entrevista desta quinta-feira (03) com Dr. Felipe Batistela que vem com o tema "Estresse p&oacute;s-traum&aacute;tico".<br /><br />Manh&atilde; Total - Das 8h &agrave;s 10h da manh&atilde;.</span></span></p>
+<div id="fbPhotoSnowliftProductsTagList" class="pts fbPhotoProductsTagList">&nbsp;</div>
+<div id="fbPhotoSnowliftProductTags" class="fbPhotoProductTags">&nbsp;</div>',
+                'image' => '/photos//20597426_716183981924596_3405880154766865473_n.jpg',
+                'thumb' => '/photos//thumbs/20597426_716183981924596_3405880154766865473_n.jpg',
+                'meta_description' => NULL,
+                'meta_title' => 'Entrevista Dr. Felipe Batistela',
+                'meta_keywords' => NULL,
+                'created_at' => '2017-08-03 21:01:31',
+                'updated_at' => '2017-08-03 21:01:31',
                 'deleted_at' => NULL,
+            ),
+            7 => 
+            array (
+                'id' => 8,
+                'user_id' => 2,
+                'type_id' => 3,
+                'active' => 1,
+                'title' => 'Manhã Total - Entrevista com o Dr. Celso G. de Oliveria',
+                'body' => '<p>Conteudo Teste</p>',
+                'image' => '/photos//DSCN7849.JPG',
+                'thumb' => '/photos//thumbs/DSCN7849.JPG',
+                'meta_description' => NULL,
+                'meta_title' => 'Manhã Total - Entrevista com o Dr. Celso G. de Oliveria',
+                'meta_keywords' => NULL,
+                'created_at' => '2017-08-10 21:28:54',
+                'updated_at' => '2017-08-11 11:00:19',
+                'deleted_at' => NULL,
+            ),
+            8 => 
+            array (
+                'id' => 9,
+                'user_id' => 2,
+                'type_id' => 2,
+                'active' => 1,
+                'title' => 'Materia Teste',
+                'body' => '<p>Materia Teste</p>',
+                'image' => '/photos//17426258_1772349759747651_8064794164004148780_n.jpg',
+                'thumb' => '/photos//thumbs/17426258_1772349759747651_8064794164004148780_n.jpg',
+                'meta_description' => NULL,
+                'meta_title' => 'Materia Teste',
+                'meta_keywords' => NULL,
+                'created_at' => '2017-08-11 10:47:01',
+                'updated_at' => '2017-08-11 10:58:55',
+                'deleted_at' => '2017-08-11 10:58:55',
             ),
         ));
         
