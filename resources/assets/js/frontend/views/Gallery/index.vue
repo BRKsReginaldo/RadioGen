@@ -62,7 +62,7 @@
                 this.lightboxImg = this.singlePhotos[index - 1]
             },
             getMonth(index) {
-                return moment(index.split('-')[1], 'M').format("MMMM")
+                return moment(parseInt(index.split('-')[1]) + 1, 'M').format("MMMM")
             },
             getDiff(photo) {
                 return moment(photo.created_at).fromNow()

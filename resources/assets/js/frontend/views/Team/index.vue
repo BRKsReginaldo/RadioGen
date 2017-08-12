@@ -32,7 +32,7 @@
                                     <v-card-media contain>
                                         <h1 class="headline">{{ member.name }}</h1>
 
-                                        <div>Cargo: <b>{{ member.role}}</b></div>
+                                        <div><b>{{ member.role}}</b></div>
                                     </v-card-media>
                                 </v-flex>
                             </v-layout>

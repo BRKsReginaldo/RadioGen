@@ -24,9 +24,6 @@
 
                 el.innerHTML = video.video
 
-                console.log(el.getElementsByTagName('video'))
-                console.log(el.getElementsByTagName('iframe'))
-
                 this.video = video
 
                 if (el.getElementsByTagName('video').length > 0) {
@@ -36,8 +33,6 @@
                     this.video.url = el.getElementsByTagName('iframe')[0].src
                     this.video.type = 'iframe'
                 }
-
-                console.log(this.video)
 
                 this.lightbox = !this.lightbox
             },

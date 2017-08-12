@@ -20,7 +20,7 @@ export default {
 <template>
     <v-container fluid>
         <h1 class="text-xs-center">
-            <a :href="url" class="headline white--text " style="text-decoration: none">Confira a rádio no giro esportivo</a>
+            <a :href="url" class="headline white--text " style="text-decoration: none">Confira a Rádio no Giro Esportivo</a>
         </h1>
         <v-parallax :src="src" style="cursor: pointer" @click.native="go">
             <v-layout column align-center justify-center>
