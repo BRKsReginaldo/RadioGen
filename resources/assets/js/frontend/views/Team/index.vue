@@ -41,7 +41,6 @@
                 </v-flex>
             </v-layout>
         </v-container>
-
         <r-pagination getter="Team/pagination"></r-pagination>
     </div>
 </template>

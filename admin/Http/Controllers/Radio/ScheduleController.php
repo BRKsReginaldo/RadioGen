@@ -46,8 +46,7 @@ class ScheduleController extends Controller
             'description',
             'speaker',
             'image',
-            'thumb',
-            'description'
+            'thumb'
         ]));
 
         return redirect()->route('admin.radio.schedule');
