@@ -37,7 +37,7 @@
                 this.lightbox = !this.lightbox
             },
             getMonth(index) {
-                return moment(index.split('-')[1], 'M').format("MMMM")
+                return moment(parseInt(index.split('-')[1]) + 1, 'M').format("MMMM")
             },
             getDiff(video) {
                 return moment(video.created_at).fromNow()
