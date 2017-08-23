@@ -69,7 +69,7 @@
                 if (schedule) {
                     let name = schedule.name.length > 60 ? schedule.name.slice(0, 57) + '...' : schedule.name
                     let speaker = schedule.speaker.length > 30 ? schedule.speaker.slice(0, 27) + '...' : schedule.speaker
-                    this.message = `Agora na radio: ${name} com ${speaker}`
+                    this.message = `No ar: ${name} com ${speaker}`
                 } else {
                     this.message = 'Programação inativa'
                 }

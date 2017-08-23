@@ -2920,7 +2920,7 @@ exports.default = {
             this.lightbox = !this.lightbox;
         },
         getMonth: function getMonth(index) {
-            return (0, _moment2.default)(index.split('-')[1], 'M').format("MMMM");
+            return (0, _moment2.default)(parseInt(index.split('-')[1]) + 1, 'M').format("MMMM");
         },
         getDiff: function getDiff(video) {
             return (0, _moment2.default)(video.created_at).fromNow();
