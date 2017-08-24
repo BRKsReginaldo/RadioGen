@@ -46,10 +46,10 @@
                 return 'http://www.facebook.com/sharer.php?u=' + (window.location.protocol + '//' + window.location.host + window.location.pathname) + '/' + interviews.id
             },
             getGPlusShare(interviews) {
-                return `https://twitter.com/share?url=${(window.location.protocol + '//' + window.location.host + window.location.pathname) + '/' + interviews.id}&text=${interviews.title}&hashtags=toNaRadioBomJesus`
+                return `https://plus.google.com/share?url=${(window.location.protocol + '//' + window.location.host + window.location.pathname) + '/' + interviews.id}`
             },
             getTwitterShare(interviews) {
-                return `https://plus.google.com/share?url=${(window.location.protocol + '//' + window.location.host + window.location.pathname) + '/' + interviews.id}`
+                return `https://twitter.com/share?url=${(window.location.protocol + '//' + window.location.host + window.location.pathname) + '/' + interviews.id}&text=${interviews.title}&hashtags=toNaRadioBomJesus`
             }
         }
     }

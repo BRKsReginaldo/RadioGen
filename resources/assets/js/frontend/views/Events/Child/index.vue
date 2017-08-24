@@ -40,10 +40,10 @@
                 return 'http://www.facebook.com/sharer.php?u=' + (window.location.href)
             },
             getGPlusShare() {
-                return `https://twitter.com/share?url=${window.location.href}&text=${this.event.title}&hashtags=toNaRadioBomJesus`
+                return `https://plus.google.com/share?url=${window.location.href}`
             },
             getTwitterShare() {
-                return `https://plus.google.com/share?url=${window.location.href}`
+                return `https://twitter.com/share?url=${window.location.href}&text=${this.event.title}&hashtags=toNaRadioBomJesus`
             }
         }
     }

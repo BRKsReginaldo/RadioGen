@@ -41,10 +41,10 @@
             getFacebookShare(news) {
                 return 'http://www.facebook.com/sharer.php?u=' + (window.location.protocol + '//' + window.location.host + window.location.pathname) + '/' + news.id
             },
-            getGPlusShare(news) {
+            getTwitterShare(news) {
                 return `https://twitter.com/share?url=${(window.location.protocol + '//' + window.location.host + window.location.pathname) + '/' + news.id}&text=${news.title}&hashtags=toNaRadioBomJesus`
             },
-            getTwitterShare(news) {
+            getGPlusShare(news) {
                 return `https://plus.google.com/share?url=${(window.location.protocol + '//' + window.location.host + window.location.pathname) + '/' + news.id}`
             }
         }
@@ -74,17 +74,18 @@
                 <v-card-media :src="news.image" height="300px">
                 </v-card-media>
                 <v-card-title primary-title>
-                <div>
-                    <div class="mb-2">
-                        <span class="headline schedule--name"><b>{{ news.title }}</b></span>
+                    <div>
+                        <div class="mb-2">
+                            <span class="headline schedule--name"><b>{{ news.title }}</b></span>
+                        </div>
+                        <div class="schedule--description" v-html="news.body"></div>
                     </div>
-                    <div class="schedule--description" v-html="news.body"></div>
-                </div>
                     <v-container>
                         <v-layout row>
                             <v-flex x12>
                                 <p class="body-1">Criado há: <b>{{createdDiff}}.</b></p>
-                                <p class="body-1" v-if="createdDiff !== updatedDiff">Editado há: <b>{{updatedDiff}}.</b></p>
+                                <p class="body-1" v-if="createdDiff !== updatedDiff">Editado há: <b>{{updatedDiff}}.</b>
+                                </p>
                             </v-flex>
                         </v-layout>
                     </v-container>

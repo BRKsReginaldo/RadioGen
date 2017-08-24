@@ -41,10 +41,10 @@
             getFacebookShare(posts) {
                 return 'http://www.facebook.com/sharer.php?u=' + (window.location.protocol + '//' + window.location.host + window.location.pathname) + '/' + posts.id
             },
-            getGPlusShare(posts) {
+            getTwitterShare(posts) {
                 return `https://twitter.com/share?url=${(window.location.protocol + '//' + window.location.host + window.location.pathname) + '/' + posts.id}&text=${posts.title}&hashtags=toNaRadioBomJesus`
             },
-            getTwitterShare(posts) {
+            getGPlusShare(posts) {
                 return `https://plus.google.com/share?url=${(window.location.protocol + '//' + window.location.host + window.location.pathname) + '/' + posts.id}`
             }
         }
@@ -84,7 +84,8 @@
                         <v-layout row>
                             <v-flex x12>
                                 <p class="body-1">Criado há: <b>{{createdDiff}}.</b></p>
-                                <p class="body-1" v-if="createdDiff !== updatedDiff">Editado há: <b>{{updatedDiff}}.</b></p>
+                                <p class="body-1" v-if="createdDiff !== updatedDiff">Editado há: <b>{{updatedDiff}}.</b>
+                                </p>
                             </v-flex>
                         </v-layout>
                     </v-container>
