@@ -10,4 +10,4 @@ $schedule = \Admin\Models\Schedule::find(request()->route()->parameters()['child
 <meta name="twitter:url" content="{{ preg_replace("/\r|\n/", " ", trim(url()->current())) }}">
 <meta name="twitter:title" content="{{ preg_replace("/\r|\n/", " ", trim($schedule->name)) }}">
 <meta name="twitter:image" content="{{ preg_replace("/\r|\n/", " ", trim(request()->getSchemeAndHttpHost().$schedule->image)) }}">
-<meta name="twitter:description" content="{{ str_limit(trim(strip_tags($schedule->description)), 150)) }}">
+<meta name="twitter:description" content="{{ str_limit(trim(strip_tags($schedule->description)), 150) }}">

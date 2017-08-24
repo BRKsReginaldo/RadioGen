@@ -10,4 +10,4 @@ $post = \Admin\Models\Post::find(request()->route()->parameters()['child']);
 <meta name="twitter:url" content="{{ preg_replace("/\r|\n/", " ", trim(url()->current())) }}">
 <meta name="twitter:title" content="{{ preg_replace("/\r|\n/", " ", trim($post->title)) }}">
 <meta name="twitter:image" content="{{ preg_replace("/\r|\n/", " ", trim(request()->getSchemeAndHttpHost().$post->image)) }}">
-<meta name="twitter:description" content="{{ str_limit(trim(strip_tags($post->body)), 150)) }}">
+<meta name="twitter:description" content="{{ preg_replace("/\r|\n/", " ", str_limit(trim(strip_tags($post->body)), 150)) }}">
