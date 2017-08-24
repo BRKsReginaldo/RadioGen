@@ -82,13 +82,13 @@
                 })
             },
             getFacebookShare(schedule) {
-                return 'http://www.facebook.com/sharer.php?u=' + window.location.href + '/schedules/' + schedule.id
+                return 'http://www.facebook.com/sharer.php?u=' + window.location.href + '/' + schedule.id
             },
             getTwitterShare(schedule) {
-                return `https://twitter.com/share?url=${window.location.href}/schedules/${schedule.id}&text=${schedule.name}&hashtags=toNaRadioBomJesus`
+                return `https://twitter.com/share?url=${window.location.href}/${schedule.id}&text=${schedule.name}&hashtags=toNaRadioBomJesus`
             },
             getGPlusShare(schedule) {
-                return `https://plus.google.com/share?url=${window.location.href}/schedules/${schedule.id}`
+                return `https://plus.google.com/share?url=${window.location.href}/${schedule.id}`
             }
         }
     })
@@ -116,7 +116,7 @@
                             <v-btn icon light :href="getFacebookShare(schedule)" target="_blank">
                                 <v-icon fa>facebook</v-icon>
                             </v-btn>
-                            <v-btn icon light :href="getGPlusShare(schedule)">
+                            <v-btn icon light :href="getGPlusShare(schedule)" target="_blank">
                                 <v-icon fa>google-plus</v-icon>
                             </v-btn>
                             <v-btn icon light :href="getTwitterShare(schedule)" target="_blank">

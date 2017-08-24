@@ -1913,6 +1913,10 @@ __webpack_require__(21);
 
 var _lodash = __webpack_require__(8);
 
+var _Message = __webpack_require__(270);
+
+var _Message2 = _interopRequireDefault(_Message);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
@@ -1933,7 +1937,7 @@ exports.default = {
         }
     },
     components: {
-        rMessage: __webpack_require__(270)
+        rMessage: _Message2.default
     },
     methods: {
         showDivider: function showDivider(group) {
@@ -2059,10 +2063,10 @@ exports.default = {
             return 'http://www.facebook.com/sharer.php?u=' + window.location.href;
         },
         getGPlusShare: function getGPlusShare() {
-            return 'https://twitter.com/share?url=' + window.location.href + '&text=' + this.event.title + '&hashtags=toNaRadioBomJesus';
+            return 'https://plus.google.com/share?url=' + window.location.href;
         },
         getTwitterShare: function getTwitterShare() {
-            return 'https://plus.google.com/share?url=' + window.location.href;
+            return 'https://twitter.com/share?url=' + window.location.href + '&text=' + this.event.title + '&hashtags=toNaRadioBomJesus';
         }
     }
 };
@@ -2704,13 +2708,13 @@ exports.default = {
     },
     methods: {
         getFacebookShare: function getFacebookShare(interviews) {
-            return 'http://www.facebook.com/sharer.php?u=' + (window.location.protocol + '//' + window.location.host + window.location.pathname) + '/' + interviews.id;
+            return 'http://www.facebook.com/sharer.php?u=' + window.location.href;
         },
         getGPlusShare: function getGPlusShare(interviews) {
-            return 'https://twitter.com/share?url=' + (window.location.protocol + '//' + window.location.host + window.location.pathname + '/' + interviews.id) + '&text=' + interviews.title + '&hashtags=toNaRadioBomJesus';
+            return 'https://plus.google.com/share?url=' + window.location.href;
         },
         getTwitterShare: function getTwitterShare(interviews) {
-            return 'https://plus.google.com/share?url=' + (window.location.protocol + '//' + window.location.host + window.location.pathname + '/' + interviews.id);
+            return 'https://twitter.com/share?url=' + window.location.href + '&hashtags=toNaRadioBomJesus';
         }
     }
 };
@@ -2840,14 +2844,14 @@ exports.default = {
         }
     },
     methods: {
-        getFacebookShare: function getFacebookShare(news) {
-            return 'http://www.facebook.com/sharer.php?u=' + (window.location.protocol + '//' + window.location.host + window.location.pathname) + '/' + news.id;
+        getFacebookShare: function getFacebookShare(interviews) {
+            return 'http://www.facebook.com/sharer.php?u=' + window.location.href;
         },
-        getGPlusShare: function getGPlusShare(news) {
-            return 'https://twitter.com/share?url=' + (window.location.protocol + '//' + window.location.host + window.location.pathname + '/' + news.id) + '&text=' + news.title + '&hashtags=toNaRadioBomJesus';
+        getGPlusShare: function getGPlusShare(interviews) {
+            return 'https://plus.google.com/share?url=' + window.location.href;
         },
-        getTwitterShare: function getTwitterShare(news) {
-            return 'https://plus.google.com/share?url=' + (window.location.protocol + '//' + window.location.host + window.location.pathname + '/' + news.id);
+        getTwitterShare: function getTwitterShare(interviews) {
+            return 'https://twitter.com/share?url=' + window.location.href + '&hashtags=toNaRadioBomJesus';
         }
     }
 };
@@ -3079,14 +3083,14 @@ exports.default = {
         }
     },
     methods: {
-        getFacebookShare: function getFacebookShare(posts) {
-            return 'http://www.facebook.com/sharer.php?u=' + (window.location.protocol + '//' + window.location.host + window.location.pathname) + '/' + posts.id;
+        getFacebookShare: function getFacebookShare(interviews) {
+            return 'http://www.facebook.com/sharer.php?u=' + window.location.href;
         },
-        getGPlusShare: function getGPlusShare(posts) {
-            return 'https://twitter.com/share?url=' + (window.location.protocol + '//' + window.location.host + window.location.pathname + '/' + posts.id) + '&text=' + posts.title + '&hashtags=toNaRadioBomJesus';
+        getGPlusShare: function getGPlusShare(interviews) {
+            return 'https://plus.google.com/share?url=' + window.location.href;
         },
-        getTwitterShare: function getTwitterShare(posts) {
-            return 'https://plus.google.com/share?url=' + (window.location.protocol + '//' + window.location.host + window.location.pathname + '/' + posts.id);
+        getTwitterShare: function getTwitterShare(interviews) {
+            return 'https://twitter.com/share?url=' + window.location.href + '&hashtags=toNaRadioBomJesus';
         }
     }
 };
@@ -3200,14 +3204,14 @@ exports.default = {
         }
     },
     methods: {
-        getFacebookShare: function getFacebookShare(schedule) {
-            return 'http://www.facebook.com/sharer.php?u=' + window.location.href + '/schedules/' + schedule.id;
+        getFacebookShare: function getFacebookShare(interviews) {
+            return 'http://www.facebook.com/sharer.php?u=' + window.location.href;
         },
-        getTwitterShare: function getTwitterShare(schedule) {
-            return 'https://twitter.com/share?url=' + window.location.href + '/schedules/' + schedule.id + '&text=' + schedule.name + '&hashtags=toNaRadioBomJesus';
+        getGPlusShare: function getGPlusShare(interviews) {
+            return 'https://plus.google.com/share?url=' + window.location.href;
         },
-        getGPlusShare: function getGPlusShare(schedule) {
-            return 'https://plus.google.com/share?url=' + window.location.href + '/schedules/' + schedule.id;
+        getTwitterShare: function getTwitterShare(interviews) {
+            return 'https://twitter.com/share?url=' + window.location.href + '&hashtags=toNaRadioBomJesus';
         }
     }
 };
@@ -3305,13 +3309,13 @@ exports.default = Vue.extend({
             });
         },
         getFacebookShare: function getFacebookShare(schedule) {
-            return 'http://www.facebook.com/sharer.php?u=' + window.location.href + '/schedules/' + schedule.id;
+            return 'http://www.facebook.com/sharer.php?u=' + window.location.href + '/' + schedule.id;
         },
         getTwitterShare: function getTwitterShare(schedule) {
-            return 'https://twitter.com/share?url=' + window.location.href + '/schedules/' + schedule.id + '&text=' + schedule.name + '&hashtags=toNaRadioBomJesus';
+            return 'https://twitter.com/share?url=' + window.location.href + '/' + schedule.id + '&text=' + schedule.name + '&hashtags=toNaRadioBomJesus';
         },
         getGPlusShare: function getGPlusShare(schedule) {
-            return 'https://plus.google.com/share?url=' + window.location.href + '/schedules/' + schedule.id;
+            return 'https://plus.google.com/share?url=' + window.location.href + '/' + schedule.id;
         }
     }
 });
@@ -3597,7 +3601,8 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     attrs: {
       "icon": "",
       "light": "",
-      "href": _vm.getGPlusShare(_vm.posts)
+      "href": _vm.getGPlusShare(_vm.posts),
+      "target": "_blank"
     }
   }, [_c('v-icon', {
     attrs: {
@@ -3793,7 +3798,8 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     attrs: {
       "icon": "",
       "light": "",
-      "href": _vm.getGPlusShare(_vm.interviews)
+      "href": _vm.getGPlusShare(_vm.interviews),
+      "target": "_blank"
     }
   }, [_c('v-icon', {
     attrs: {
@@ -3938,7 +3944,8 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     attrs: {
       "icon": "",
       "light": "",
-      "href": _vm.getGPlusShare
+      "href": _vm.getGPlusShare,
+      "target": "_blank"
     }
   }, [_c('v-icon', {
     attrs: {
@@ -4244,7 +4251,8 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     attrs: {
       "icon": "",
       "light": "",
-      "href": _vm.getGPlusShare(_vm.news)
+      "href": _vm.getGPlusShare(_vm.news),
+      "target": "_blank"
     }
   }, [_c('v-icon', {
     attrs: {
@@ -4850,7 +4858,8 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     attrs: {
       "icon": "",
       "light": "",
-      "href": _vm.getGPlusShare(_vm.schedule)
+      "href": _vm.getGPlusShare(_vm.schedule),
+      "target": "_blank"
     }
   }, [_c('v-icon', {
     attrs: {
@@ -5292,7 +5301,8 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
         attrs: {
           "icon": "",
           "light": "",
-          "href": _vm.getGPlusShare(schedule)
+          "href": _vm.getGPlusShare(schedule),
+          "target": "_blank"
         }
       }, [_c('v-icon', {
         attrs: {
