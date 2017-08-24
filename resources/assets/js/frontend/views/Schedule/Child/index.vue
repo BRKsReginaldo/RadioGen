@@ -86,7 +86,7 @@ export default {
                     <v-btn icon light :href="getFacebookShare(schedule)" target="_blank">
                         <v-icon fa>facebook</v-icon>
                     </v-btn>
-                    <v-btn icon light :href="getGPlusShare(schedule)">
+                    <v-btn icon light :href="getGPlusShare(schedule)" target="_blank">
                         <v-icon fa>google-plus</v-icon>
                     </v-btn>
                     <v-btn icon light :href="getTwitterShare(schedule)" target="_blank">

@@ -77,7 +77,7 @@
                         <v-btn icon light :href="getFacebookShare" target="_blank">
                             <v-icon fa>facebook</v-icon>
                         </v-btn>
-                        <v-btn icon light :href="getGPlusShare">
+                        <v-btn icon light :href="getGPlusShare" target="_blank">
                             <v-icon fa>google-plus</v-icon>
                         </v-btn>
                         <v-btn icon light :href="getTwitterShare" target="_blank">

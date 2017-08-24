@@ -99,7 +99,7 @@
                     <v-btn icon light :href="getFacebookShare(interviews)" target="_blank">
                         <v-icon fa>facebook</v-icon>
                     </v-btn>
-                    <v-btn icon light :href="getGPlusShare(interviews)">
+                    <v-btn icon light :href="getGPlusShare(interviews)" target="_blank">
                         <v-icon fa>google-plus</v-icon>
                     </v-btn>
                     <v-btn icon light :href="getTwitterShare(interviews)" target="_blank">
