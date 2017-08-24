@@ -57,9 +57,7 @@ export default {
                     <v-container fill-height fluid>
                         <v-layout fill-height>
                             <v-flex x12 align-end flexbox>
-                                <span class="headline white--text schedule--name">
-                                    <b>{{ schedule.name }}</b>
-                                </span>
+
                             </v-flex>
                         </v-layout>
                     </v-container>
@@ -67,9 +65,15 @@ export default {
                 <v-card-title primary-title>
                     <v-container>
                         <v-layout row wrap>
-                            <h3 class="headline" style="word-wrap: break-word">Apresentando:
-                                <b>{{ schedule.speaker }}</b>
-                            </h3>
+                            <div>
+                                <div class="headline schedule--name" >
+                                    <b>{{ schedule.name }}</b>
+                                </div>
+                                <br>
+                                <h3 class="subheading" style="word-wrap: break-word">Apresentando:
+                                    <b>{{ schedule.speaker }}</b>
+                                </h3>
+                            </div>
                         </v-layout>
                         <v-layout row>
                             <div class="schedule--description" v-html="schedule.description"></div>

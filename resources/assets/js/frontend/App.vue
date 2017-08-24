@@ -77,6 +77,7 @@
 <template>
     <v-app toolbar dark>
         <v-navigation-drawer height="100%" class="orange lighten-2" persistent enable-resize-watcher :clipped="!isMobile" v-model="drawer" ref="drawer">
+            <router-link v-if="false" to="/" tag="img" style="cursor: pointer; display: block; max-width: 150px; margin: 10px auto 0 " :src="logoSrc"></router-link>
             <v-list class="orange lighten-2">
                 <v-list-tile v-for="(item, index) in items" :key="index" :to="item.to">
                     <v-list-tile-action>
@@ -91,7 +92,10 @@
         <v-toolbar class="primary" fixed>
             <v-toolbar-side-icon @click.native.stop="toggleDrawer" class="hidden-md-and-up"></v-toolbar-side-icon>
             <v-toolbar-title>
-                <router-link to="/" tag="img" style="cursor: pointer; max-width: 90px; position: relative; top: 3px; " :src="logoSrc"></router-link>
+                <router-link to="/"
+                             tag="img"
+                             style="cursor: pointer; max-width: 90px; position: relative; top: 3px;"
+                             :src="logoSrc"></router-link>
             </v-toolbar-title>
             <v-spacer></v-spacer>
             <r-player></r-player>

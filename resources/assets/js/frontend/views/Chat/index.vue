@@ -1,34 +1,38 @@
 <script>
-import store from '../../store'
-export default {
-    beforeRouteEnter(to, from, next) {
-        store.dispatch('Ui/setFillHeight', true)
-        next()
-    },
-    beforeRouteLeave(to, from, next) {
-        store.dispatch('Ui/setFillHeight', false)
-        next()
-    },
-    components: {
-        rForm: require('./Form'),
-        rLogin: require('./Login'),
-        rMessages: require('./Messages')
-    },
-    computed: {
-        person() {
-            return this.$store.getters['Chat/as']
+    import store from '../../store'
+    import rForm from './Form'
+    import rLogin from './Login'
+    import rMessages from './Messages'
+
+    export default {
+        beforeRouteEnter(to, from, next) {
+            store.dispatch('Ui/setFillHeight', true)
+            next()
         },
-        messages() {
-            return this.$store.getters['Chat/messages']
-        }
-    },
-    mounted () {
-        this.$refs.chat.scrollTop = this.$refs.chat.scrollHeight
-    },
-    updated() {
-        this.$refs.chat.scrollTop = this.$refs.chat.scrollHeight
-    },
-}
+        beforeRouteLeave(to, from, next) {
+            store.dispatch('Ui/setFillHeight', false)
+            next()
+        },
+        components: {
+            rForm,
+            rLogin,
+            rMessages
+        },
+        computed: {
+            person() {
+                return this.$store.getters['Chat/as']
+            },
+            messages() {
+                return this.$store.getters['Chat/messages']
+            }
+        },
+        mounted () {
+            this.$refs.chat.scrollTop = this.$refs.chat.scrollHeight
+        },
+        updated() {
+            this.$refs.chat.scrollTop = this.$refs.chat.scrollHeight
+        },
+    }
 </script>
 
 <template>

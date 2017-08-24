@@ -14,6 +14,15 @@
     <meta name="{{ $meta['name'] }}" content="{{ $meta['content'] }}" data-vmid="{{ $meta['name'] }}" data-vue-meta="true">
 @endforeach
 @endif
+    @if(request()->route()->getName() === 'Events.Child')
+        @include('layouts.event')
+    @elseif(request()->route()->getName() === 'Posts.Child' ||
+    request()->route()->getName() === 'Interviews.Child' ||
+    request()->route()->getName() === 'News.Child')
+        @include('layouts.post')
+    @elseif(request()->route()->getName() === 'Schedule.Child')
+        @include('layouts.schedule')
+    @endif
     <!-- Styles -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet"
           type="text/css">

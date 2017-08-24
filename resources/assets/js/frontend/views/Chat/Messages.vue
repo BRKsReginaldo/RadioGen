@@ -2,6 +2,7 @@
 import moment from 'moment'
 import 'moment/locale/pt-br'
 import {groupBy} from 'lodash'
+import rMessage from './Message.vue'
 export default {
   props: {
       messages: {
@@ -20,7 +21,7 @@ export default {
     }
   },
   components: {
-      rMessage: require('./Message')
+      rMessage
   },
   methods: {
       showDivider(group) {

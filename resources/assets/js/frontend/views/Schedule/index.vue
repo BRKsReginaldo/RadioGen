@@ -107,17 +107,11 @@
                         v-bind="getGrid(ind)">
                     <v-card light>
                         <v-card-media @click.native="goTo(schedule)" :src="schedule.image" height="300px" style="cursor: pointer">
-                            <v-container fill-height fluid>
-                                <v-layout fill-height>
-                                    <v-flex xs12 align-end flexbox>
-                                        <span class="headline white--text schedule--name">
-                                            {{ getTitle(schedule) }}
-                                        </span>
-                                    </v-flex>
-                                </v-layout>
-                            </v-container>
                         </v-card-media>
                         <v-card-actions>
+                            <span class="headline black--text schedule--name">
+                                {{ getTitle(schedule) }}
+                            </span>
                             <v-spacer></v-spacer>
                             <v-btn icon light :href="getFacebookShare(schedule)" target="_blank">
                                 <v-icon fa>facebook</v-icon>

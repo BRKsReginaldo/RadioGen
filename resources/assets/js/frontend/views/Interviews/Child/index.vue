@@ -76,16 +76,14 @@
         <v-container fluid fill-height light v-if="interviews">
             <v-card light>
                 <v-card-media :src="interviews.image" height="300px">
-                    <v-container fill-height fluid>
-                        <v-layout fill-height>
-                            <v-flex x12 align-end flexbox>
-                                <span class="headline white--text schedule--name"><b>{{ interviews.title }}</b></span>
-                            </v-flex>
-                        </v-layout>
-                    </v-container>
                 </v-card-media>
                 <v-card-title primary-title>
-                    <div class="schedule--description" v-html="interviews.body"></div>
+                    <div>
+                        <div class="mb-2">
+                            <span class="headline schedule--name"><b>{{ interviews.title }}</b></span>
+                        </div>
+                        <div class="schedule--description" v-html="interviews.body"></div>
+                    </div>
                     <v-container>
                         <v-layout row>
                             <v-flex x12>

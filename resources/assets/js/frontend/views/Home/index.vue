@@ -1,11 +1,16 @@
 <script>
+import rTops from './rTops'
+import rGallery from './rGallery'
+import rSocial from './rSocial'
+import rPoll from './rPoll'
+import rBanner from './rBanner' 
 export default {
     components: {
-        rTops: require('./rTops'),
-        rGallery: require('./rGallery'),
-        rSocial: require('./rSocial'),
-        rPoll: require('./rPoll'),
-        rBanner: require('./rBanner')
+        rTops,
+        rGallery,
+        rSocial,
+        rPoll,
+        rBanner
     }
 }
 </script>

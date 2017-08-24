@@ -54,16 +54,14 @@
         <v-container fluid fill-height light v-if="event">
             <v-card light>
                 <v-card-media :src="event.image" height="300px">
-                    <v-container fluid fill-height>
-                        <v-layout fill-height>
-                            <v-flex xs12 align-end flexbox>
-                                <span class="headline white--text schedule--name"><b>{{ event.title }}</b></span>
-                            </v-flex>
-                        </v-layout>
-                    </v-container>
                 </v-card-media>
                 <v-card-title primary-title>
-                    <div class="schedule--description" v-html="event.body"></div>
+                    <div>
+                        <div class="mb-2">
+                            <span class="headline schedule--name"><b>{{ event.title }}</b></span>
+                        </div>
+                        <div class="schedule--description" v-html="event.body"></div>
+                    </div>
                     <v-container>
                         <v-layout row>
                             <v-flex xs12>
