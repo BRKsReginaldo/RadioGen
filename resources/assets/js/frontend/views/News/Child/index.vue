@@ -38,14 +38,14 @@
             }
         },
         methods: {
-            getFacebookShare(news) {
-                return 'http://www.facebook.com/sharer.php?u=' + (window.location.protocol + '//' + window.location.host + window.location.pathname) + '/' + news.id
+            getFacebookShare(interviews) {
+                return 'http://www.facebook.com/sharer.php?u=' + (window.location.href)
             },
-            getTwitterShare(news) {
-                return `https://twitter.com/share?url=${(window.location.protocol + '//' + window.location.host + window.location.pathname) + '/' + news.id}&text=${news.title}&hashtags=toNaRadioBomJesus`
+            getGPlusShare(interviews) {
+                return `https://plus.google.com/share?url=${window.location.href}`
             },
-            getGPlusShare(news) {
-                return `https://plus.google.com/share?url=${(window.location.protocol + '//' + window.location.host + window.location.pathname) + '/' + news.id}`
+            getTwitterShare(interviews) {
+                return `https://twitter.com/share?url=${window.location.href}&hashtags=toNaRadioBomJesus`
             }
         }
     }

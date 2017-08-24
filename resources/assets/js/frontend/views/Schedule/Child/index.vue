@@ -25,14 +25,14 @@ export default {
         }
     },
     methods: {
-        getFacebookShare(schedule) {
-            return 'http://www.facebook.com/sharer.php?u=' + window.location.href + '/schedules/' + schedule.id
+        getFacebookShare(interviews) {
+            return 'http://www.facebook.com/sharer.php?u=' + (window.location.href)
         },
-        getTwitterShare(schedule) {
-            return `https://twitter.com/share?url=${window.location.href}/schedules/${schedule.id}&text=${schedule.name}&hashtags=toNaRadioBomJesus`
+        getGPlusShare(interviews) {
+            return `https://plus.google.com/share?url=${window.location.href}`
         },
-        getGPlusShare(schedule) {
-            return `https://plus.google.com/share?url=${window.location.href}/schedules/${schedule.id}`
+        getTwitterShare(interviews) {
+            return `https://twitter.com/share?url=${window.location.href}&hashtags=toNaRadioBomJesus`
         }
     }
 }
