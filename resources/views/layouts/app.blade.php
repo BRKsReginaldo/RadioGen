@@ -9,11 +9,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ $data['page_metas']->where('name', 'title')->first()['content'] }} - {{ $data['config']->where('key', 'suffix')->first()['value'] }}</title>
-@if (count($data['page_metas']) > 0)
-@foreach($data['page_metas'] as $meta)
-    <meta name="{{ $meta['name'] }}" content="{{ $meta['content'] }}" data-vmid="{{ $meta['name'] }}" data-vue-meta="true">
-@endforeach
-@endif
     @if(request()->route()->getName() === 'Events.Child')
         @include('layouts.event')
     @elseif(request()->route()->getName() === 'Posts.Child' ||
@@ -22,6 +17,11 @@
         @include('layouts.post')
     @elseif(request()->route()->getName() === 'Schedule.Child')
         @include('layouts.schedule')
+    @endif
+    @if (count($data['page_metas']) > 0)
+        @foreach($data['page_metas'] as $meta)
+            <meta name="{{ $meta['name'] }}" content="{{ $meta['content'] }}" data-vmid="{{ $meta['name'] }}" data-vue-meta="true">
+    @endforeach
     @endif
     <!-- Styles -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet"
