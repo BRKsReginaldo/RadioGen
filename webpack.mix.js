@@ -1,4 +1,4 @@
-const {mix} = require('laravel-mix');
+const mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,28 +11,29 @@ const {mix} = require('laravel-mix');
  |
  */
 
- mix.js('resources/assets/js/app.js', 'public/js')
-    .webpackConfig({
-        resolve: {
-            extensions: ['*', '.js', '.vue', '.json']
-        }
-    })
-    .extract([
-        'vue',
-        'vuex',
-        'vue-router',
-        'vuetify',
-        'axios',
-        'moment',
-        'js-cookie',
-        'lodash'
-    ])
-    .stylus('resources/assets/stylus/app.styl', 'public/css')
-    .autoload({
-        vue: ['Vue', 'window.Vue']
-    })
-    .disableNotifications();
- 
+// mix.stylus('resources/assets/stylus/app.styl', 'public/css');
+
+mix.js('resources/assets/js/app.js', 'public/js')
+  .webpackConfig({
+    resolve: {
+      extensions: ['*', '.js', '.vue', '.json']
+    }
+  })
+  .extract([
+    'vue',
+    'vuex',
+    'vue-router',
+    'vuetify',
+    'axios',
+    'moment',
+    'js-cookie',
+    'lodash'
+  ])
+  .autoload({
+    vue: ['Vue', 'window.Vue']
+  })
+  .disableNotifications();
+
 
 /*  mix.scripts([
     'node_modules/jquery/dist/jquery.js',

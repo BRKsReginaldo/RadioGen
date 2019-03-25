@@ -16,6 +16,7 @@
             isMobile: false,
             items: [
                 {title: 'Home', icon: 'dashboard', to: '/'},
+                {title: 'Giro Esportivo', icon: 'check_circle', to: '/giro'},
                 {title: 'Programação', icon: 'access_time', to: '/schedule'},
                 {title: 'Notícias', icon: 'insert_drive_file', to: '/news'},
                 {title: 'Entrevistas', icon: 'mic', to: '/interviews'},
@@ -53,12 +54,15 @@
                 return payload
             },
             logoSrc() {
-                return this.$store.getters['Config/key']['logo_src'] ? this.$store.getters['Config/key']['logo_src']['value'] : '/photos/assets/logo_thumb.png'
+                return this.$store.getters['Config/key']['logo_src'] ? this.$store.getters['Config/key']['logo_src']['value'] : '/photos/assets/logo.png'
+
             }
         },
         methods: {
           toggleDrawer() {
               this.drawer = !this.drawer
+
+              console.log('toggling drawer')
           }
         },
         components: {
@@ -90,7 +94,7 @@
             </v-list>
         </v-navigation-drawer>
         <v-toolbar class="primary" fixed>
-            <v-toolbar-side-icon @click.native.stop="toggleDrawer" class="hidden-md-and-up"></v-toolbar-side-icon>
+            <v-toolbar-side-icon @click.stop="toggleDrawer" class="hidden-md-and-up"></v-toolbar-side-icon>
             <v-toolbar-title>
                 <router-link to="/"
                              tag="img"

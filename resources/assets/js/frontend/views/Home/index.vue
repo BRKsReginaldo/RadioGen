@@ -3,14 +3,12 @@ import rTops from './rTops'
 import rGallery from './rGallery'
 import rSocial from './rSocial'
 import rPoll from './rPoll'
-import rBanner from './rBanner' 
 export default {
     components: {
         rTops,
         rGallery,
         rSocial,
         rPoll,
-        rBanner
     }
 }
 </script>
@@ -35,15 +33,7 @@ export default {
                 <r-tops></r-tops>
             </v-flex>
         </v-layout>
-        <v-layout row>
-            <v-flex xs12>
-                <r-banner></r-banner>
-            </v-flex>
-        </v-layout>
         <v-layout row-md column>
-            <v-flex md6 xs12>
-                <r-poll></r-poll>
-            </v-flex>
             <v-flex md6 xs12>
                 <r-social></r-social>
             </v-flex>

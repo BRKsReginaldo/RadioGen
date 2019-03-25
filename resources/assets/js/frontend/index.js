@@ -10,6 +10,8 @@ export default new Vue({
     store,
     ...App,
     mounted () {
+      console.log('hello world')
+
         if (window.ServerData) {
             let data = window.ServerData
 

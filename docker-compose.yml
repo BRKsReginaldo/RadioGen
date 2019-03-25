@@ -1,0 +1,34 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:11.2
+    ports:
+      - 5432:5432
+    volumes:
+      - ./volumes/postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: defuser
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: db
+
+  cache:
+    image: redis
+    volumes:
+      - ./volumes/redis:/data
+
+  app:
+    image: ambientum/php:7.3-nginx
+    volumes:
+      - ./:/var/www/app
+    ports:
+      - 8080:8080
+      - 8083:8083
+    depends_on:
+      - cache
+      - postgres
+
+  frontend:
+    image: ambientum/node:11
+    volumes:
+      - ./:/var/www/app
+    command: sh ./frontend.sh

@@ -27,7 +27,6 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet"
           type="text/css">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script>
         window.PageName = '{{ request()->route()->getName() }}';
         window.ServerData = {!!  json_encode($data) !!};
@@ -63,7 +62,7 @@
 <script src="{{ asset('js/manifest.js') }}"></script>
 <script src="{{ asset('js/vendor.js') }}"></script>
 <script src="{{ asset('js/app.js') }}"></script>
-<script src="{{ asset('js/0.js') }}"></script>
-<script src="{{ asset('js/1.js') }}"></script>
+{{--<script src="{{ asset('js/0.js') }}"></script>--}}
+{{--<script src="{{ asset('js/1.js') }}"></script>--}}
 </body>
 </html>

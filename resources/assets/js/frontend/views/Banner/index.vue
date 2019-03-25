@@ -27,7 +27,7 @@ export default {
 <template>
     <v-container fluid>
         <h1 class="text-xs-center">
-            <a :href="url" class="headline white--text " style="text-decoration: none">Confira a Rádio no Giro Esportivo</a>
+            <a :href="url" target="_blank" class="headline white--text " style="text-decoration: none">Confira a Rádio no Giro Esportivo</a>
         </h1>
         <div :style="style" @click="go"></div>
     </v-container>
