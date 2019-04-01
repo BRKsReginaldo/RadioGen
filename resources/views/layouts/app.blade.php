@@ -27,6 +27,12 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet"
           type="text/css">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/xfind.css') }}">
+
+
     <script>
         window.PageName = '{{ request()->route()->getName() }}';
         window.ServerData = {!!  json_encode($data) !!};
@@ -62,6 +68,8 @@
 <script src="{{ asset('js/manifest.js') }}"></script>
 <script src="{{ asset('js/vendor.js') }}"></script>
 <script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('bootstrap/js/bootstrap.js') }}"></script>
+<script src="{{ asset('js/xfind.js') }}"></script>
 {{--<script src="{{ asset('js/0.js') }}"></script>--}}
 {{--<script src="{{ asset('js/1.js') }}"></script>--}}
 </body>

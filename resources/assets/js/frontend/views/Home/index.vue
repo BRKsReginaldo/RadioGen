@@ -34,7 +34,7 @@ export default {
             </v-flex>
         </v-layout>
         <v-layout row-md column>
-            <v-flex md6 xs12>
+            <v-flex md12 xs12>
                 <r-social></r-social>
             </v-flex>
         </v-layout>
