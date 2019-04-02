@@ -16,7 +16,6 @@
             isMobile: false,
             items: [
                 {title: 'Home', icon: 'dashboard', to: '/'},
-                {title: 'Giro Esportivo', icon: 'check_circle', to: '/giro'},
                 {title: 'Programação', icon: 'access_time', to: '/schedule'},
                 {title: 'Notícias', icon: 'insert_drive_file', to: '/news'},
                 {title: 'Entrevistas', icon: 'mic', to: '/interviews'},
@@ -25,7 +24,7 @@
                 {title: 'Galeria de fotos', icon: 'photo_library', to: '/gallery'},
                 {title: 'Tv Rádio Bom Jesus', icon: 'video_library', to: '/videos'},
                 {title: 'A Equipe', icon: 'supervisor_account', to: '/team'},
-                {title: 'A Rádio', icon: 'info_outline', to: '/about'},
+                {title: 'Giro Esportivo', icon: 'brightness_1', to: '/giro'},
                 {title: 'Parceiros', icon: 'tag_faces', to: '/partners'},
                 {title: 'Fale conosco', icon: 'chat', to: '/chat'},
             ]
@@ -98,7 +97,7 @@
             <v-toolbar-title>
                 <router-link to="/"
                              tag="img"
-                             style="cursor: pointer; max-width: 90px; position: relative; top: 3px;"
+                             style="cursor: pointer; max-width: 200px; height: auto; position: relative; top: -2px;"
                              :src="logoSrc"></router-link>
             </v-toolbar-title>
             <v-spacer></v-spacer>
