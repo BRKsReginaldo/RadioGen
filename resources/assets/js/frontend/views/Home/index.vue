@@ -13,26 +13,29 @@ export default {
 }
 </script>
 
+<style>
+    img {
+        max-width: 100%;
+    }
+</style>
+
 <template>
     <div>
-        <h1 class="headline white--text">Home</h1>
+        <h1 class="headline white--text">Bem-Vindo</h1>
         <v-layout row-md column>
-            <v-flex md6 sm12 xs12>
-                <r-gallery fetch="/api/posts/latest" route="Posts.Child" sk="PostLatest">
-                    Últimas matérias
-                </r-gallery>
-            </v-flex>
-            <v-flex md6 sm12 xs12>
-                <r-gallery fetch="/api/news/latest" route="News.Child" sk="NewsLatest">
-                    Últimas notícias
-                </r-gallery>
-            </v-flex>
+           <div class="p-5 mt-4">
+               <div class="container">
+                   <div class="row">
+                       <div class="container">
+                           <div class="row">
+                               <img src="https://live.staticflickr.com/7882/47504465022_601d8a2a45_b.jpg" srcset="https://live.staticflickr.com/7882/47504465022_601d8a2a45_b.jpg 500w, https://live.staticflickr.com/7882/47504465022_601d8a2a45_b.jpg 800w, https://live.staticflickr.com/7882/47504465022_601d8a2a45_b.jpg 1024w" sizes="(min-width: 1024px) 1024px, 100vw">
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
         </v-layout>
-        <v-layout row>
-            <v-flex xs12>
-                <r-tops></r-tops>
-            </v-flex>
-        </v-layout>
+
         <v-layout row-md column>
             <v-flex md12 xs12>
                 <r-social></r-social>
